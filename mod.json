@@ -1,0 +1,37 @@
+{
+  "geode": "5.11.1",
+  "gd": {
+    "ios": "2.2081",
+    "mac": "2.2081",
+    "win": "2.2081"
+  },
+  "id": "req.auto-deco",
+  "name": "Auto Deco AI",
+  "version": "1.1.0",
+  "developer": "req",
+  "description": "Prompt-driven AI placement for glow and shine decorations in the Geometry Dash editor.",
+  "settings": {
+    "api-title": {
+      "type": "title",
+      "name": "AI provider"
+    },
+    "api-endpoint": {
+      "type": "string",
+      "name": "Chat completions endpoint",
+      "description": "OpenAI-compatible chat completions endpoint. For local Ollama, replace YOUR-MAC-IP with your Mac's Wi-Fi IP address.",
+      "default": "http://YOUR-MAC-IP:11434/v1/chat/completions"
+    },
+    "api-model": {
+      "type": "string",
+      "name": "Model",
+      "description": "Model name installed in Ollama (default is a small local model).",
+      "default": "qwen3:1.7b"
+    },
+    "api-key": {
+      "type": "string",
+      "name": "API key",
+      "description": "Optional for a local Ollama server. Leave blank for the local setup; only use keys for providers you are authorized to use.",
+      "default": ""
+    }
+  }
+}
